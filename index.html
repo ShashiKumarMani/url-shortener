@@ -13,18 +13,24 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header>
-    <div>Shortly</div>
-    <nav>
-      Features
-      Pricing
-      Resources  
-    </nav>
-    <nav>
-      Login
-      Sign Up
+    <div class="header-main">
+      <div class="logo"></div>
+      <nav class="nav-page">
+        <ul>
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Resources</li>
+        </ul>  
+      </nav>
+    </div>
+
+    <nav class="nav-log">
+      <div>Login</div>
+      <button>Sign Up</button>
     </nav>
   </header>
 
@@ -38,10 +44,10 @@
     <button>Get Started</button>
   </section>
   
-  <section>
+  <main>
     <input type="text" placeholder="Shorten a link here...">
     <button>Shorten It!</button>
-  </section>
+  </main>
 
   <section>
     <div>
@@ -81,7 +87,7 @@
     <button>Get Started</button>
   </section>
 
-  <section>
+  <footer>
     <div>Shortly</div>
     <div>
       <div>
@@ -105,7 +111,7 @@
       </div>
     </div>
     <div></div>
-  </section>
+  </footer>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
