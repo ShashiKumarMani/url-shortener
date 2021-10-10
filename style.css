@@ -78,6 +78,7 @@ header {
     height: 600px;
     margin: auto;
     display: flex;
+    border: 1px green dashed;
 }
 
 .start-container {
@@ -120,3 +121,34 @@ header {
     left: 45%;
 }
 
+/* Main */
+
+main {
+    height: 100px;
+    width: 80%;
+    margin: auto;
+    border: 1px red dashed;
+    transform: translateY(-50%);
+    padding: 25px 30px;
+    background-image: url('./images/bg-shorten-desktop.svg');
+    background-size: cover;
+    background-position: top 25% left 100%;
+    background-color:hsl(255, 11%, 22%);
+    border-radius: 10px;
+}
+
+main input {
+    width: 80%;
+    height: 45px;
+    margin-right: 10px;
+    padding-left: 20px;
+}
+
+main button {
+    width: 15%;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(180, 66%, 49%);
+    color: #FFF;
+}
