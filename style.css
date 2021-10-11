@@ -78,7 +78,6 @@ header {
     height: 600px;
     margin: auto;
     display: flex;
-    border: 1px green dashed;
 }
 
 .start-container {
@@ -121,13 +120,20 @@ header {
     left: 45%;
 }
 
+/* Section 2 */
 /* Main */
+.stats-section {
+    height: 850px;
+    width: 100vw;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
 main {
     height: 100px;
-    width: 80%;
-    margin: auto;
-    border: 1px red dashed;
+    width: 75%;
     transform: translateY(-50%);
     padding: 25px 30px;
     background-image: url('./images/bg-shorten-desktop.svg');
@@ -135,6 +141,8 @@ main {
     background-position: top 25% left 100%;
     background-color:hsl(255, 11%, 22%);
     border-radius: 10px;
+    margin-left: 9%;
+    /* position: absolute; */
 }
 
 main input {
@@ -151,4 +159,87 @@ main button {
     border-radius: 10px;
     background-color: hsl(180, 66%, 49%);
     color: #FFF;
+}
+
+.stats-main {
+    height: 20%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+.stats-title {
+    font-size: 2rem;
+}
+
+.stats-text {
+    width: 50%;
+    margin:auto;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.stats-cards {
+    height: 40%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats-card {
+    width: 32%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+
+.stats-card:nth-of-type(2) {
+    transform: translateY(45px);
+}
+
+.stats-card:nth-of-type(3) {
+    transform: translateY(90px);
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.stats-card p {
+    font-size: 1rem;
+    margin-top: 25px;
+    line-height: 1.5;
+    color: hsl(0, 0%, 75%);
+}
+
+.card-img {
+    height: 25%;
+    width: 23%;
+    transform: translateY(-50%);
+    background-size: cover;
+    border-radius: 50%;
+    background-color:hsl(255, 11%, 22%);
+}
+
+.img {
+    height: 50%;
+    width: 50%;
+    transform: translate(50%, 45%) ;
+    background-size: cover;
+}
+
+.img-1 {
+    background-image: url('./images/icon-brand-recognition.svg');
+}
+
+.img-2 {
+    background-image: url('./images/icon-detailed-records.svg');
+}
+
+.img-3 {
+    background-image: url('./images/icon-fully-customizable.svg')
 }
