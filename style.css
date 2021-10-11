@@ -243,3 +243,34 @@ main button {
 .img-3 {
     background-image: url('./images/icon-fully-customizable.svg')
 }
+
+/* Section 3 */
+.boost-section {
+    width: 100vw;
+    height: 200px;
+    border: 1px red dashed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image : url('./images/bg-boost-desktop.svg');
+    background-size: cover;
+    background-position: 25% 45%;
+    background-color:hsl(255, 11%, 22%);
+}
+
+.boost-section button {
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: hsl(180, 66%, 49%);
+    color: #FFF;
+}
+
+.boost-title {
+    font-size: 2rem;
+    color: #FFF;
+    margin-bottom: 30px;
+}
