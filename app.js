@@ -28,9 +28,13 @@ shortenButton.addEventListener('click', async (event) => {
     let res;
 
     try {
+        shortenButton.textContent = 'Converting';
         res = await fetch(`https://api.shrtco.de/v2/shorten?url=${urlInput.value}`)
+        shortenButton.textContent = 'Shorten it!';
     } catch(error) {
         console.log('API Error');
+        shortenButton.textContent = 'Shorten it!';
+        return;
     }
 
     res = (await res.json()).result.full_short_link;
@@ -51,7 +55,10 @@ shortenButton.addEventListener('click', async (event) => {
     const copyButton = document.createElement('button');
     copyButton.addEventListener('click', () => {
         console.log('Copy Button clicked');
-    })
+        copyButton.style.backgroundColor = 'hsl(255, 11%, 22%)';
+        copyButton.textContent = 'Copied';
+    });
+
     copyButton.textContent = "Copy";
 
     urlData.appendChild(urlOrg);
