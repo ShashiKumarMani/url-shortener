@@ -45,5 +45,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 
+### Useful resources
+
 - [Shrtcode API](https://app.shrtco.de/) - A free link shortener API.
 - [MDN Docs](https://developer.mozilla.org/en-US/) - Resources on HTML, CSS and JavaScript
